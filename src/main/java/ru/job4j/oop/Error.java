@@ -11,6 +11,11 @@ public class Error {
         this.status = status;
         this.message = message;
     }
+    public Error(){
+        this.active = true;
+        this.status = 12;
+        this.message = "restart system";
+    }
 
     public void info() {
         System.out.println("active is: " + active);
@@ -19,7 +24,7 @@ public class Error {
     }
 
     public static void main(String[] args) {
-        Error error = new Error(true, 45, "restar the system");
+        Error error = new Error();
         error.info();
         System.out.println();
         Error error1 = new Error(false, 0, "all ok");
