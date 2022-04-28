@@ -12,9 +12,6 @@ public class Error {
         this.message = message;
     }
     public Error(){
-        this.active = true;
-        this.status = 12;
-        this.message = "restart system";
     }
 
     public void info() {
