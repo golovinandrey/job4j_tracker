@@ -3,31 +3,30 @@ package ru.job4j.oop;
 public class Calculator {
 
     private static int x = 5;
-    int y = 10, a = 9, z = 15, c = 2;
 
-    public static int sum(int y) {
-        return x + y;
+    public static int sum(int b) {
+        return x + b;
     }
 
-    public static int minus(int a) {
-        return a - x;
+    public static int minus(int b) {
+        return b - x;
     }
 
-    public int devide(int z) {
-        return z / x;
+    public int devide(int b) {
+        return b / x;
     }
 
-    public int multiply(int c) {
-        return x * c;
+    public int multiply(int b) {
+        return x * b;
     }
 
-    public int sumAllOperation() {
-        return sum(y) + minus(a) + devide(z) + multiply(c);
+    public int sumAllOperation(int b) {
+        return sum(b) + minus(b) + devide(b) + multiply(b);
     }
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        calculator.sumAllOperation();
-        System.out.println(calculator.sumAllOperation());
+        calculator.sumAllOperation(10);
+        System.out.println(calculator.sumAllOperation(10));
     }
 }
